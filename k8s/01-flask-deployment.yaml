@@ -18,7 +18,7 @@ spec:
       containers:
       - name: flask
         image: flask-observability:latest
-        imagePullPolicy: IfNotPresent   # importante no Minikube
+        imagePullPolicy: IfNotPresent   # Minikube required 
         ports:
         - containerPort: 5000
         readinessProbe:
